@@ -1,0 +1,689 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    background-color: whitesmoke; 
+}
+
+/*========= HEADER ==========*/
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 70px;
+    background-image: url('images/wood-bg.png');
+    background-repeat: repeat-x;
+  }
+
+#header img{
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: 70%;
+}
+
+/*========= TOP TABS ==========*/
+#tabs-top{
+    position: fixed;
+    top: 69px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+    background-image: url('images/wood-bg.png');
+    background-repeat: repeat-x;
+}
+
+#tabs-top a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.2);
+    transition: background-color 0.5s ease;
+}
+
+#tabs-top a:hover{
+    background-color: black;
+}
+
+/*========= HOME ==========*/
+#image img{
+    width: 100%;
+    margin-top: 126px;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.vl{
+    height: 40px;
+    position: relative; 
+    border-left:3px solid #997655 ;
+    left: 50%;
+}
+
+#links{
+    padding-top: 1px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#links a{
+text-decoration: none;
+color: black
+}
+
+#links p{
+    margin:0;
+    padding:0;
+}
+
+.button{
+    margin-top: 15px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+     color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100px; 
+    text-align: center;
+}
+
+.button img{
+    margin-right: 2px; 
+    height: 20px;
+    width: 20px; 
+}
+
+/*========= SPECIALS ==========*/
+#specials{
+    background-color: black;
+}
+
+#specials h2{
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
+/*========= INFO BOX ==========*/
+.info-box-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px; 
+    padding-bottom: 20px;
+ 
+}
+
+.info-box{
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: whitesmoke;
+    width: calc(50% - 20px);
+    height: auto; 
+    min-height: 100px;
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.info-box img{
+    width: 100%; 
+    object-fit: cover; 
+}
+
+@media (min-width: 768px){
+    .info-box-container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .info-box{
+        width: calc(22% - 10px); 
+        height: 650px;
+        margin: 10px; 
+    }
+}
+
+a.info-box{
+    text-decoration: none;  
+    text-align: left;
+    color: black;
+}
+
+a.info-box h3, a.info-box p{
+    text-align: left;
+    padding:0;
+}
+
+a.info-box p:nth-child(4){
+    font-size: 14px;
+    font-weight: 700;
+    color: #997655;
+}
+
+a:hover.info-box {
+    background-color: rgba(228, 214, 196, 0.993);
+    transform: scale(1.03);
+}
+
+/*========= BOTTOM TABS ==========*/
+#tabs-bottom{
+    background-color: black;
+    padding: 10px;
+}
+
+#tabs-bottom h4{
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+#tabs-bottom table{
+    color: white;
+    padding-left: 10px;
+}
+
+hr{
+    width: 50px;
+    border: 2px solid #997655;
+    margin-left: 10px;
+    top: 210px;
+}
+
+#quick-links a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#quick-links a:hover{
+color: #997655;
+}
+
+/*========= FOOTER ==========*/
+#footer{
+    height: 50px;
+    background-color: black;
+}
+
+#footer p{
+    padding: 20px;
+    margin: 0px;
+    font-size: 12px;
+    color:white;
+    text-align: center;
+}
+
+/*========= ABOUT ==========*/
+#about img{
+    width: 100%;
+}
+
+#about p{
+    margin: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/*========= CONTACT ==========*/
+#contact img{
+    width: 100%;
+}
+
+#icons{
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#icons .buttons{
+    margin-top: 15px; 
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 100px; 
+}
+
+/*========= FORM ==========*/
+#form{
+    text-align: center;
+    
+}
+input{
+    width: 90%;
+    height: 25px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+
+textarea{
+    font-family: Helvetica;
+    font-size: 13px;
+    width: 90%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+
+#form .button{
+    width: 100px;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    margin: 12px auto;
+    padding: 8px 0;
+}
+
+#form .button:hover{
+    text-decoration: none;
+    background-color: #997655; 
+    transition: background-color 0.5s ease;
+}
+
+/*========= FEEDBACK ==========*/
+#feedback h2{
+    margin-bottom: 20px;
+}
+
+#feedback p{
+    margin-top: 20px;
+}
+
+/*========= FACILITIES ==========*/
+#facilities{
+    margin: 10px;
+}
+
+#facilities h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#facilities p{
+    text-align: left;
+}
+
+/*========== STORE LOGO ==========*/
+#store-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    background-color: black;
+    padding-bottom: 20px;
+}
+#store-logo img{
+    width: 200px;
+    margin-top: 160px;
+    position: relative;
+    align-items: center;
+}
+
+/*========= MAIN ==========*/
+#main{
+    margin-top: 0px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 140px;
+    width: 100%;
+}
+
+#content img{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    display: block;
+    margin :auto;
+    padding: 10px; 
+}
+
+/*========= MOVIES CONTAINER ==========*/
+.movies-container{
+    background-color: black;
+}
+
+.movies-container h2{
+    color: white;
+}
+
+/*========= MOVIES ==========*/
+#movies-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#movies-image img{
+    width: 60%;
+}
+
+#movies{
+    background-color:black;
+    color: white;
+    padding: 20px;   
+}
+
+#movies h3,p .some-class{
+    text-align: center;
+}
+
+#movies .info-box{
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#movies .info-box h6{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:#997655
+}
+
+#movies .info-box p{
+    padding:0 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: left; 
+}
+
+#movies p:nth-child(3){
+    font-size: 14px;
+    font-weight: 700;
+    color: #997655;
+}
+
+/*========= BUTTON CONTAINER ==========*/
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    gap: 15px;
+}
+
+.text-button{
+    background-color: #997655;
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    gap:10px;
+    text-decoration: none;
+}
+
+#movies a{
+    display: block; 
+    text-align: right;
+    padding: 0 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #997655;
+}
+
+/*========= STORE LIST ==========*/
+#store-list{
+    margin-top: 129px;
+}
+
+#store-list h2{
+    margin: 0;
+    padding: 10px 0;
+}
+
+#store-list .info-box{
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(122, 87, 40, 0.452);
+    overflow: hidden;
+    gap: 4%;  
+}
+
+#store-list .info-box.parent{
+    display: block;
+    background-color: rgba(228, 214, 196, 0.993);
+    padding: 15px;
+}
+
+#store-list .info-box.parent h2{
+    font-family: Helvetica;
+    color: black;
+
+}
+
+#store-list a.info-box.child{
+    background-color: #fefefe; 
+    border-color: #997655; 
+    margin: 10px 0;
+    padding: 10px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: auto;
+}
+
+@media (min-width: 768px){
+    #store-list .info-box.parent{
+        display: inline-flex;
+        width: 47.5%; 
+        margin: 20px;  
+    }
+    #store-list .info-box.parent:last-child{
+        margin-right: 0;
+    }
+}
+
+#store-list .info-box.child a{
+    text-decoration: none;
+    padding: 10px; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 40px; 
+    width: auto;
+}
+
+#store-list .info-box.child img{
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
+
+#store-list .info-box.child p{
+    font-size:18px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: black;
+    text-align: left;
+}
+
+#store-list .info-box.child a:hover{
+    transform: scale(1.05);
+}
+
+/*========= MOVIES ==========*/
+#movies-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#movies-image img{
+    width: 60%;
+}
+
+#movies{
+    background-color:black;
+    color: white;
+    padding: 20px;   
+}
+
+#movies h3,p .some-class{
+    text-align: center;
+}
+
+#movies .info-box{
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#movies .info-box h6{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:#997655
+}
+
+#movies .info-box p{
+    padding:0 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: left; 
+}
+
+#movies p:nth-child(3){
+    font-size: 14px;
+    font-weight: 700;
+    color: #997655;
+}
+
+/*========= STORE ==========*/
+#store{
+    text-align: center;
+}
+
+#store #store-logo{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    width: 400px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+}
+
+#store p{
+    text-align: left;
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+
+.store-front img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+@media (min-width: 1024px){ 
+    .store-front img{
+        width: 49.75%; 
+        margin: 0 auto; 
+        display: block; 
+    }
+}
+
+#store li{
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    margin: 5px 0; 
+    padding-left: 10px; 
+}
+
+#store li i{
+    color: #997655; 
+}
+
+.store-image img{
+    display: inline-block; 
+    width: 49.5%;
+    vertical-align: top; 
+    margin: 10px 0;
+}
+
+#store .button{
+    display: inline-block;
+    width: auto;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+#store .button:hover{
+    text-decoration: none;
+    background-color: #997655; 
+    transition: background-color 0.5s ease;
+}
+
